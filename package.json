@@ -1,0 +1,19 @@
+{
+  "name": "challenge-04",
+  "version": "1.0.0",
+  "description": "FSW Challenge 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "dev": "nodemon ./server/index.js"
+  },
+  "author": "Cindy",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+    
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- OwlCarousel -->
+        <link rel="stylesheet" href="./assets/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="./assets/owl.theme.default.min.css">
+    
+        <title>Challenge 4</title>
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target=".navbar">
+        <!-- navbar section  -->
+        <section id="navbar">
+            <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="home">
+                <img src="./images/rectangle.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link text-black" href="#our-service">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-black" href="#why-us">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-black" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-black" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link btn btn-success" href="javascript:void(0)"><span class="text-white">Register</span></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </section>
+        <!-- end navbar -->
+    
+        <!-- hero section -->
+        <section id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 sm-12">
+                        <div class="hero-caption">
+                            <h2 class="text-black">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
+                        </div>   
+                        <div class="hero-text">
+                            <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                        </div>    
+                    </div>
+                    <div class="col-md-6 sm-12">
+                        <div class="hero-image">
+                        <img src="./images/img_car.svg" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end hero -->
+
+        <!-- searching car for rent form section -->
+        <section id="search-car">
+            <div class="card container mb-5">
+                <div class="d-flex flex-column flex-md-row bd-highlight" >
+                    <div class="p-3 flex-fill bd-highlight">
+                        <label for="form_driver" class="form-label">Tipe Driver</label>
+                        <select class="form-select" id="form_driver">
+                            <option value="">Pilih Tipe Driver</option>
+                            <option value=true>Dengan Sopir</option>
+                            <option value=false>Tanpa Sopir (Lepas Kunci)</option>
+                        </select>
+                    </div>
+                    <div class="p-3 flex-fill bd-highlight">
+                        <label for="form_date" class="form-label">Tanggal</label>
+                        <input type="date" class="form-control" id="form_date" placeholder="Pilih Tanggal">
+                    </div>
+                    <div class="p-3 flex-fill bd-highlight">
+                        <label for="form_time" class="form-label">Waktu Jemput/Ambil</label>
+                        <input type="time" class="form-control" id="form_time" placeholder="Pilih Waktu">
+                    </div>
+                    <div class="p-3 flex-fill bd-highlight">
+                        <label for="form_passenger" class="form-label">Jumlah Penumpang (Opsional)</label>
+                        <input type="number" class="form-control" id="form_passenger" min=1 placeholder="Jumlah Penumpang">
+                    </div>
+                    <div class="p-3 flex-fill bd-highlight" style="margin: auto;text-align: center;">
+                        <div class="d-grid gap-2 mx-auto">
+                            <button class="btn btn-sm btn-outline-success" type="button" id="load-btn">Cari Mobil <i class="fa-solid fa-car"></i></button>
+                            <button class="btn btn-sm btn-outline-primary" type="button" id="clear-btn">Reset <i class="fa-solid fa-rotate-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <!-- end form section  -->
+
+        <!-- print car cards-->
+        <section class="container">
+            <div id="cars-container"></div>
+        </section>
+        <!-- end -->
+
+        <!-- footer section -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    <p class="mb">Jalan Suroyo No .161 Mayangan Kota Probolonggo 672000</p>
+                    <p class="mb">binarcarrental@gmail.com</p>
+                    <p class="mb">081-233-334-800</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="title-sm text-black">Our Services</p>
+                        <p class="title-sm text-black">Why Us</p>
+                        <p class="title-sm text-black">Testimonial</p>
+                        <p class="title-sm text-black">FAQ</p>
+                    </div>
+                    <div class="col-md-3">
+                    <p class="title-sm">Connect With Us</p>
+                    <div class="icon-holder">
+                        <img src="./images/icon_facebook.svg">
+                        <img src="./images/icon_instagram.svg">
+                        <img src="./images/icon_twitter.svg">
+                        <img src="./images/icon_mail.svg">
+                        <img src="./images/icon_twitch.svg">
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                    <p class="title-sm">Copyright Binar 2022</p>
+                    <img src="./images/rectangle.svg">
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <!-- end footer -->
+        <!-- js scripts -->
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./scripts/binar.js"></script>
+        <script type="text/javascript" src="./scripts/app.example.js"></script>
+        <script type="text/javascript" src="./scripts/car.example.js"></script>
+        <script type="text/javascript" src="./scripts/main.example.js"></script>
+</body>
+</html>
